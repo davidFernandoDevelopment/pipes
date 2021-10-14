@@ -1,0 +1,24 @@
+<div class="text-layout">
+  <h1>Pipes de numeros</h1>
+  <p>
+    Pipe para mostrar porcentages, decimales y moneda
+  </p>
+</div>
+<div class="grid">
+  <div class="col-4">
+    <p-card header="Ventas netas" subheader="del dia">
+      {{ dailyNetSales +123456 }} | number: {{ dailyNetSales + 123456 | number: '1.1-3'}}
+    </p-card>
+  </div>
+  <div class="col-4">
+    <p-card header="Ventas brutas" subheader="del dia">
+      {{ dailyNetSales +123456 }} | | currency:'PEN':'symbol-narrow':'1.0-4': {{ dailyNetSales + 123456 |
+      currency:'PEN':'symbol-narrow':'1.0-4' }}
+    </p-card>
+  </div>
+  <div class="col-4">
+    <p-card header="Ganancia %" subheader="del dia">
+      {{ roi }} | percent:'2.1-2' : {{ roi | percent:'2.1-2' }}
+    </p-card>
+  </div>
+</div>
