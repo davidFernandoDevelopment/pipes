@@ -7,6 +7,11 @@ import { NoComunesComponent } from './pages/no-comunes/no-comunes.component';
 import { BasicosComponent } from './pages/basicos/basicos.component';
 import { OrdenarComponent } from './pages/ordenar/ordenar.component';
 
+import { MayusculaPipe } from './pipes/mayuscula.pipe';
+import { VuelaPipe } from './pipes/vuela.pipe';
+import { ColorPipe } from './pipes/color.pipe';
+import { OrdenarPipe } from './pipes/ordenar.pipe';
+
 
 
 @NgModule({
@@ -14,7 +19,11 @@ import { OrdenarComponent } from './pages/ordenar/ordenar.component';
     NumbersComponent,
     NoComunesComponent,
     BasicosComponent,
-    OrdenarComponent
+    OrdenarComponent,
+    MayusculaPipe,
+    VuelaPipe,
+    ColorPipe,
+    OrdenarPipe
   ],
   imports: [
     CommonModule,
